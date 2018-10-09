@@ -3,6 +3,8 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 $_SESSION['active_page']="login";
+$_SESSION['update_sts']="off";//for admin panel
+$_SESSION['del_sts']="off";//for admin panel
 include_once "../template/header.php";
 
 
