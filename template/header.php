@@ -1,5 +1,8 @@
 <?php
+
 include_once "../template/resourcesFile.php";
+//echo("<br>Header : ".$_SESSION['active_page']);
+
 
 ?>
 
@@ -10,22 +13,15 @@ include_once "../template/resourcesFile.php";
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="http://localhost/framework/ui/home.php">Mr. Chase</a>
+	      <a class="navbar-brand" href="http://localhost/restaurant/ui/home_page.php">Mr. Chase</a>
 	    </div>
 	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="http://localhost/framework/ui/home.php">Home</a></li>
-	      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="http://localhost/framework/ui/diseaseInfo.php">Disease Info</span></a>
-
-	      </li>
-	      <li><a href="http://localhost/framework/ui/doctor_list.php">Doctor List</a></li>
-	      <li><a href="http://localhost/framework/ui/donor_list.php">Blood Donor List</a></li>
+	      <li <?php if($_SESSION['active_page']=="home"){?> class="active" <?php } ?> ><a href="http://localhost/restaurant/ui/home_page.php">Home</a></li>
+	      <li <?php if($_SESSION['active_page']=="products"){?> class="active" <?php } ?> ><a  href="http://localhost/restaurant/ui/products.php">Products</a></li>
+	      <li <?php if($_SESSION['active_page']=="contacts_us"){?> class="active" <?php } ?>  ><a href="http://localhost/restaurant/ui/contacts_us.php">Contact Us</a></li>
 	    </ul>
 	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="http://localhost/framework/ui/singup.php">Sign Up</a></li>
-	      <li><a href="http://localhost/framework/ui/login.php">
-	      <?php
-	      ?>
-	      Login</a></li>
+	      <li <?php if($_SESSION['active_page']=="login"){?> class="active" <?php } ?>  ><a href="http://localhost/restaurant/ui/login.php">Login</a></li>
 	    </ul>
 	  </div>
 	</nav>
