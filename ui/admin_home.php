@@ -99,7 +99,7 @@ $_SESSION['del_sts']="off";
 <br><br>
 	<h3 style="font-weight: bold;">#Food List</h3>
 	<table class="table">
-		<tr>
+		<tr class="success">
 			<th>Food Details</th>
 			<th>Food Image</th>
 			<th>Edit</th>
