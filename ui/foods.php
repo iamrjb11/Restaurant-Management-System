@@ -2,7 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-$_SESSION['active_page']="products";
+$_SESSION['active_page']="foods";
 include_once "../template/header.php";
 
 

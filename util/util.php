@@ -8,7 +8,7 @@ class MyDatabase{
 	public $host = "localhost";
 	public $userName = "root";
 	public $password = "";
-	public $bdName = "hash_tag";
+	public $bdName = "restaurant";
 
 	public $_con;
 	public $_result;
