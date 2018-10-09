@@ -22,22 +22,23 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 ?>
 
 <head></head>
-<body style="background-image: url(../images/log.png);background-size: cover;">
+<body>
 
-	<br><br><br><br><br>
 <div class="container">
-  <h2 style="text-align: center;color: white;">Sing in</h2><br><br>
-  <form class="form-horizontal" method="post">
+	<div style="float: left;">
+  <img src="../images/mr_cheese2.jpg" ></div>
+  <form class="form-horizontal" method="post" style="float: right;padding-right: 200px;width: 550px;"><br><br><br><br><br>
+  	<h1 style="text-align: center;color: black;">Log in</h2>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="email" style="color: white;">Email:</label>
-      <div class="col-sm-8">
+      <label class="control-label " for="email" style="color: black;">Email</label>
+      <div class="col-sm-15">
         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd" style="color: white;">Password:</label>
-      <div class="col-sm-8">          
-        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+      <label class="control-label " for="pwd" style="color: black;">Password</label>
+      <div class="col-sm-15">          
+        <input type="password" class="form-control"  id="password" placeholder="Enter password" name="password">
       </div>
     </div>
     

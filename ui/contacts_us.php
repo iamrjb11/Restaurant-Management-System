@@ -11,4 +11,4 @@ include_once "../template/header.php";
 ?>
 
 <head></head>
-<body>LOGIN</body>
+<body style="text-align: center;">It will be implemented later ....<br>Ha Ha Ha </body>

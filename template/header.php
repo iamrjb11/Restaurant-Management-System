@@ -1,6 +1,7 @@
 <?php
 
 include_once "../template/resourcesFile.php";
+include_once "../util/util.php";
 //echo("<br>Header : ".$_SESSION['active_page']);
 
 
@@ -13,7 +14,7 @@ include_once "../template/resourcesFile.php";
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="http://localhost/restaurant/ui/home_page.php">Mr. Chase</a>
+	      <a class="navbar-brand" href="http://localhost/restaurant/ui/home_page.php">Mr. Cheese Restaurant</a>
 	    </div>
 	    <ul class="nav navbar-nav">
 	      <li <?php if($_SESSION['active_page']=="home"){?> class="active" <?php } ?> ><a href="http://localhost/restaurant/ui/home_page.php">Home</a></li>
