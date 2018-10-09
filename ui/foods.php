@@ -24,9 +24,9 @@ $Data = $db->getAllRows();
   <div class="col-md-4">
     <div class="thumbnail">
       <a href="<?php echo $row['food_image'];  ?>" >
-        <img src="<?php echo $row['food_image'];  ?>" style="width:400px;height: 250px">
+        <img src="<?php echo $row['food_image'];  ?>" style="width:340px;height: 300px">
         <div class="caption" style="text-align: center;">
-          <p>Product Name : <?php echo $row['food_name'];  ?></p>
+          <p>Food Name : <?php echo $row['food_name'];  ?></p>
           <p>Price : BDT. <?php echo $row['food_price'];  ?> (VAT Included)</p>
         </div>
       </a>
